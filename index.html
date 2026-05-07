@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tonsgood | Tons Good Social Space</title>
+    <meta
+      name="description"
+      content="Website coffee shop bernuansa industrial dengan space selector, digital menu, dan informasi lokasi."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#home" aria-label="Tonsgood">
+          <img
+            class="brand__logo"
+            src="./assets/logo-tonsgood.jpg"
+            alt="Logo Tonsgood"
+          />
+          <span class="brand__copy">
+            <strong>Tonsgood</strong>
+            <small>Tons Good Social Space</small>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Navigasi utama">
+          <a href="#spaces">Spaces</a>
+          <a href="#menu">Menu</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section" id="home">
+          <div class="hero__backdrop" aria-hidden="true">
+            <div class="hero__glow hero__glow--left"></div>
+            <div class="hero__glow hero__glow--right"></div>
+            <div class="hero__grid"></div>
+            <div class="hero__beam"></div>
+          </div>
+
+          <div class="hero__content reveal">
+            <h1>Brew-tiful mornings start with coffee</h1>
+          </div>
+
+          <aside class="hero__panel reveal reveal--delay">
+            <div class="panel-card panel-card--video">
+              <div class="panel-card__screen">
+                <video
+                  class="panel-card__video"
+                  src="./assets/spoiler-tonsgood.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section spaces" id="spaces">
+          <div class="section-heading reveal">
+            <p class="eyebrow">The Spaces</p>
+            <h2>Pilih area sesuai mood dan kebutuhan kunjunganmu.</h2>
+          </div>
+
+          <div class="spaces__layout">
+            <div class="spaces__stack reveal" aria-label="Pilih area">
+              <div class="space-tabs">
+                <button
+                  class="space-tab is-active"
+                  type="button"
+                  aria-selected="true"
+                  data-space="indoor"
+                >
+                  <span class="space-tab__title">Indoor</span>
+                  <span class="space-tab__hint">AC, kerja, dan suasana tenang</span>
+                </button>
+                <button
+                  class="space-tab"
+                  type="button"
+                  aria-selected="false"
+                  data-space="outdoor"
+                >
+                  <span class="space-tab__title">Outdoor</span>
+                  <span class="space-tab__hint">Vibe senja dan udara terbuka</span>
+                </button>
+                <button
+                  class="space-tab"
+                  type="button"
+                  aria-selected="false"
+                  data-space="smoking"
+                >
+                  <span class="space-tab__title">Smoking Area</span>
+                  <span class="space-tab__hint">Terpisah, lega, dan tetap estetik</span>
+                </button>
+              </div>
+
+              <article class="space-showcase reveal reveal--delay" id="space-showcase">
+                <div class="space-showcase__art space-showcase__art--indoor">
+                  <div class="space-photo-slide is-active" data-slide="0" aria-hidden="false"></div>
+                  <div class="space-photo-slide" data-slide="1" aria-hidden="true"></div>
+                  <div class="space-photo-slide" data-slide="2" aria-hidden="true"></div>
+                  <div class="space-photo-dots" aria-hidden="true">
+                    <span class="space-photo-dot is-active"></span>
+                    <span class="space-photo-dot"></span>
+                    <span class="space-photo-dot"></span>
+                  </div>
+                </div>
+                <div class="space-showcase__body">
+                  <p class="space-showcase__eyebrow" id="space-tag">Indoor Focus</p>
+                  <h3 id="space-title">Nyaman untuk kerja, meeting, dan me-time.</h3>
+                  <p id="space-copy">
+                    Area ber-AC dengan pencahayaan hangat, akses colokan di
+                    banyak titik, dan suasana akustik yang lebih tenang.
+                  </p>
+                  <ul class="feature-list" id="space-features">
+                    <li>AC sejuk dengan kapasitas duduk paling besar</li>
+                    <li>Ideal untuk laptop session dan kerja kelompok</li>
+                    <li>Pencahayaan fokus untuk ambience yang tenang</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section menu" id="menu">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Digital Menu</p>
+            <h2>Pilih menu sesuai moodmu.</h2>
+          </div>
+
+          <div class="menu-board reveal reveal--delay" id="menu-board"></div>
+        </section>
+
+        <section class="section contact" id="contact">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Contact & Location</p>
+            <h2>Temukan lokasi, jam operasional, dan jalur komunikasi tercepat.</h2>
+          </div>
+
+          <div class="contact__layout">
+            <article class="contact-card reveal">
+              <h3>Visit Tonsgood</h3>
+              <ul class="contact-list">
+                <li>DN III No.968, Bausasran, Kec. Danurejan, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55211</li>
+                <li>Setiap hari, 07.00 - 00.00 WIB</li>
+                <li>Wi-Fi, power outlet, area indoor & outdoor</li>
+              </ul>
+
+              <div class="contact-card__actions">
+                <a
+                  class="button button--primary"
+                  href="https://www.threads.com/@tonsgood"
+                  target="_blank"
+                  rel="noreferrer"
+                  >X / Threads</a
+                >
+                <a
+                  class="button button--ghost"
+                  href="https://www.instagram.com/tonsgood?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  rel="noreferrer"
+                  >Instagram</a
+                >
+                <a
+                  class="button button--ghost"
+                  href="https://www.tiktok.com/@tonsgood?is_from_webapp=1&sender_device=pc"
+                  target="_blank"
+                  rel="noreferrer"
+                  >TikTok</a
+                >
+              </div>
+            </article>
+
+            <article class="map-card reveal reveal--delay">
+              <div class="map-card__frame">
+                <iframe
+                  title="Lokasi Tonsgood"
+                  src="https://www.google.com/maps?q=DN%20III%20No.968%2C%20Bausasran%2C%20Kec.%20Danurejan%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta%2055211&z=16&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <a
+                class="map-card__link"
+                href="https://maps.app.goo.gl/qZU9yMruGTAfkG1MA"
+                target="_blank"
+                rel="noreferrer"
+                >Buka di Google Maps</a
+              >
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Foundry Brew. Built for atmosphere, clarity, and conversion.</p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
